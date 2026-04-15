@@ -12,5 +12,6 @@ COPY --from=builder /build/target/demo-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
-# docker build -t lab/api .
-# docker run -p 4000:8080 lab/api
+ docker build -t web .
+# docker build -t lab/web .
+# docker run --name test3 -p 8080:80 web
