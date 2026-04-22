@@ -1,19 +1,34 @@
 # Terraform
 
-Crearemos primero un ambiente
-
+## 1. Ingresar a la carpeta del proyecto
 ```
-terraform workspace
+cd iac
 ```
-
-Realizaremos un plan
-
+## 2. Crear workspace `dev`
 ```
-terraform plan
+sudo terraform workspace new dev
 ```
-
-Desplegaremos un plan
-
+## 3. Seleccionar workspace `dev`
 ```
-terraform apply
+sudo terraform workspace select dev
+```
+## 4. Verificar workspace
+```
+sudo terraform workspace list
+```
+## 5. Inicializar Terraform
+```
+sudo terraform init
+```
+## 6. Plan de ejecución
+```
+sudo terraform plan
+```
+## 7. Aplicar cambios
+```
+sudo terraform apply
+```
+## 8. Destruir infraestructura
+```
+sudo terraform destroy
 ```
